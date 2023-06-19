@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.148" timestamp="2023-06-19T22:24:27.258884" hostname="fv-az210-518"><testcase classname="" name="tests.test_calculator" time="0.000"><error message="collection failure">ImportError while importing test module '/home/runner/work/week1-devops/week1-devops/tests/test_calculator.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_calculator.py:1: in &lt;module&gt;
+    from calculator import add, div, mul, sub
+E   ModuleNotFoundError: No module named 'calculator'</error></testcase></testsuite></testsuites>
