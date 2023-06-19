@@ -16,11 +16,10 @@ Traceback:
 tests/test_calculator.py:1: in <module>
     from calculator import add, div, mul, sub
 E   ModuleNotFoundError: No module named 'calculator'
--- generated xml file: /home/runner/work/week1-devops/week1-devops/pytest.xml --
 
 ---------- coverage: platform linux, python 3.11.4-final-0 -----------
 
 =========================== short test summary info ============================
 ERROR tests/test_calculator.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.13s ===============================
+=============================== 1 error in 0.16s ===============================
