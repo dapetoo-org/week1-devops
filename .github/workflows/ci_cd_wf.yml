@@ -32,13 +32,14 @@ jobs:
 
       - name: Build coverage file
         run: |
-          pytest --junitxml=pytest.xml --cov-report=term-missing:skip-covered --cov=app tests/ | tee pytest-coverage.txt
+            pytest --cov=calculator --cov-report "xml:coverage.xml"  tests/ | tee pytest-coverage.txt
+        #   pytest --junitxml=pytest.xml --cov-report=term-missing:skip-covered --cov=calculator tests/ | tee pytest-coverage.txt
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
           pytest-coverage-path: ./pytest-coverage.txt
-          junitxml-path: ./pytest.xml
+        #   junitxml-path: ./pytest.xml
 
       - name: Pytest coverage comment
         if: ${{ github.ref == 'refs/heads/main' }}
